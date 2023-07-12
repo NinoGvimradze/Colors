@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: Capri;
-    src: url(/fonts/Capriola-Regular.ttf);
+    src: url(fonts/Capriola-Regular.ttf);
 }
 
 
 @font-face {
     font-family: Mali;
-    src: url(/fonts/Mali-Regular.ttf);
+    src: url(fonts/Mali-Regular.ttf);
 }
 h1{
     font-family: Capri;
