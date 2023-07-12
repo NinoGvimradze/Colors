@@ -20,14 +20,14 @@ h1{
     font-family: Capri;
     text-transform: capitalize;
     padding-bottom: 20px;
-    text-shadow: 1px 7px 10px  rgba(255, 136, 0, 0.863);
-    animation: text-shine 1.5s ease-in-out infinite alternate;
+    text-shadow: 2px 8px 10px  #f17d1e;
+    animation: text-shine 2s ease-in-out infinite alternate;
 }
 
 @keyframes text-shine {
 
-    50%  {text-shadow: 1px 7px 10px rgba(255, 136, 0, 0.863)}
-    100% {text-shadow: 1px 7px 10px #f5e74c;}
+    50%  {text-shadow: 2px 8px 10px rgba(255, 213, 0, 0.925)}
+    100% {text-shadow: 2px 8px 10px #b95c1e }
   }
 
 #Header-String{
