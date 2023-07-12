@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+@font-face {
+    font-family: Capri;
+    src: url("/style/Fonts/Capriola-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mali;
+    src: url("/style/Fonts/Mali-Regular.ttf");
+}
+h1{
+    font-family: Capri;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+#Header-String{
+    font-family: Mali;
+    text-transform: capitalize;
+    margin-left: 25px;
+    
+    display:inline;
+}
+.Hero {
+    background-image: url(/img/small.jpg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 100px;
+    color: rgb(236, 200, 111);
+  
+}
+.Container  {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
