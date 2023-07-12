@@ -27,7 +27,7 @@ h1{
     display:inline;
 }
 .Hero {
-    background-image: url(img/small.jpg);
+    background-image:url(img/small.jpg);
     background-position:center ;
     background-repeat: no-repeat;
     background-size:cover;
