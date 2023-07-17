@@ -8,9 +8,8 @@
 body{
     /* overflow: hidden; */
     width: 100%;
-    
-    
-}
+    }
+
 
 @font-face {
     font-family: Capri;
@@ -45,31 +44,31 @@ body{
     text-align: center;
     justify-content: center;
     animation-name: change;
-    animation-duration:90s;
-    animation-timing-function:ease-in;
-    animation-delay:10s;
-    /* animation-iteration-count:100; */
-    animation-direction:normal;
-    backface-visibility: hidden;
+    animation-duration:40s;
+    animation-timing-function:ease-in-out;
+    animation-delay:5s;
+    animation-iteration-count:infinite;
+    /* animation-direction:; */
+    
    
     
 }
 @keyframes change {
-    0%
+    /* 0%
         {
             background-image: url(img/first.jpg);
           
-        }
+        } */
    
-    20% {
+    40% {
           background-image: url(img/red.jpg);
           
         }
-    40% {
+    60% {
           background-image: url(img/greenn.jpg);
         
     }
-     60% {
+     80% {
          background-image: url(img/yel.jpg);
        
      }
@@ -233,6 +232,7 @@ ul{
     }
     .burger{
         display: block;
+       position: absolute;
     }
     
     .Hero:hover{
@@ -253,15 +253,25 @@ ul{
     margin-right: 25px;
 
    }
+   h2 {
+     font-size: smaller;
+     width: 300px;
+   }
+
    #Header-String{
     display: none;
    }
    .Main-Cont {
-    width: 200px;
+    width: 100px;
    }
  .Image2 {
-    width: 200px;
+    width: 50px;
+    
  }
+ .Colors-Conteinetr{
+    width: 400px;
+ }
+ 
 }
  /* ------and of responsivee ------ */
 
@@ -288,6 +298,7 @@ main {
 .Main-Cont {
     padding: 20px;
     font-family:Capri ;
+    display: block;
     
 }
 .Image2{
@@ -316,3 +327,139 @@ main {
    
    
 }
+.Meaning-OF {
+    margin: 80px;
+    width: 550px;
+    font-family: Mali;
+    text-align: justify;
+}
+
+/* ----------color section ------- */
+
+.Heading2 {
+    text-align: center;
+    font-family:Capri ;
+    margin: 50px;
+}
+
+.Colors-Conteinetr {
+    display: flex;
+    justify-content:space-around;
+}
+.Colors-Container-Box1 {
+    width: 400px;
+  font-family: Mali;
+    
+}
+
+
+
+.Four-Color-Box{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    /* background-color: #f17d1e; */
+   
+    
+}
+.red{
+    width: 180px;
+    height: 180px;
+    border-radius: 76% 24% 76% 24% / 41% 48% 52% 59%  ;
+    background-color: red;
+    animation: tsiteli;
+    animation-duration:5s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+    transform-origin: center;
+    
+}
+
+.yellow{
+    width: 200px;
+    height: 200px;
+    border-radius: 52% 48% 48% 52% / 19% 63% 37% 81%   ;
+    background-color:yellow;
+    animation: lemon;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-fill-mode:backwards;
+    
+}
+.green{
+    width: 180px;
+    height: 180px;
+    border-radius: 50% 50% 80% 20% / 41% 42% 58% 59%  ;
+    background-color:green;
+    animation: mtsvane;
+    animation-duration: 3s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-fill-mode:backwards;
+    
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    border-radius: 60% 40% 66% 34% / 54% 60% 40% 46%   ;
+    background-color: blue;
+    animation: lurji;
+    animation-duration: 4s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-fill-mode:backwards;
+    
+}
+@keyframes lurji {
+    from {background-color: rgb(151, 19, 12);
+        transform:translateX(50px);
+     }
+    to { background-color: rgba(125, 192, 182, 0.616);
+        
+    }
+    /* 0% {
+        border-radius: 0;
+    } */
+    100%{
+        border-radius: 38% 62% 72% 28% / 67% 39% 61% 33%   ;
+    }
+  }
+
+  @keyframes mtsvane {
+    from {background-color: rgba(60, 255, 0, 0.537);}
+    to { background-color: rgba(37, 164, 233, 0.826);
+        transform:translateX(50px);
+    }
+  }
+
+  @keyframes lemon {
+    from {background-color: rgb(229, 255, 0);
+    transform:translateX(40px);}
+    to { background-color: rgba(230, 71, 23, 0.909);}
+    
+    
+  }
+
+  @keyframes tsiteli {
+    from {background-color: rgba(255, 0, 0, 0.895);
+          }
+    to { background-color: rgba(211, 36, 224, 0.721);
+        transform:translateX(40px);}
+
+    
+     }
+    
+   
+  
+  
