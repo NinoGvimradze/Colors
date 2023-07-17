@@ -6,9 +6,9 @@
 } 
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    height: 100vh;
+    
     
 }
 
@@ -30,65 +30,56 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
+    position: relative;
 }
 .SlideShow {
     width:100%;
-    height: 400px;
+    height: 300px;
+    
     overflow: hidden;
     position: relative;
-    background-image: url(img/small.jpg);
+    background-image: url(img/mTavari.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
     justify-content: center;
-    
     animation-name: change;
-    animation-duration: 50s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-   
-    transform: translateX(0);
-   
+    animation-duration:90s;
+    animation-timing-function:ease-in;
+    animation-delay:10s;
+    /* animation-iteration-count:100; */
+    animation-direction:normal;
     backface-visibility: hidden;
    
+    
 }
 @keyframes change {
     0%
         {
-            background-image: url(img/red2.jpg);
-           
+            background-image: url(img/first.jpg);
+          
         }
    
     20% {
           background-image: url(img/red.jpg);
           
-          
-         
         }
     40% {
-          background-image: url(img/green.jpg);
-         
-            
+          background-image: url(img/greenn.jpg);
+        
     }
      60% {
-         background-image: url(img/yelow.jpeg);
+         background-image: url(img/yel.jpg);
        
-           
      }
-     80% {
+     85% {
         background-image:  url(img/blue.jpg);
-       
-            
+          
      }
      100% {
-        background-image: url(img/small.jpg);
-       
-            
+        background-image: url(img/bolo.jpg);
+      
      }
 }
 h1{
@@ -265,7 +256,12 @@ ul{
    #Header-String{
     display: none;
    }
-
+   .Main-Cont {
+    width: 200px;
+   }
+ .Image2 {
+    width: 200px;
+ }
 }
  /* ------and of responsivee ------ */
 
@@ -285,9 +281,38 @@ ul{
  }
 
  /* --------- start main ---------- */
-
- .Person-1-Img{
-    width: 300px;
-    border-radius: 64% 36% 36% 64% / 30% 40% 60% 70% ;
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+.Main-Cont {
+    padding: 20px;
+    font-family:Capri ;
     
- }
+}
+.Image2{
+    width: 550px;
+    padding: 10px;
+}
+.Main-Content p{
+    width: 550px; margin: auto;
+    text-align: justify;
+    font-family: Mali;
+}
+.Atributes{
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: #f17d1e;
+    
+    
+    
+   
+}
+.Atributes span {
+    text-decoration: underline;
+    color: darkgray;
+    font-weight: 100;
+   
+   
+}
