@@ -8,6 +8,8 @@
 body{
     /* overflow: hidden; */
     width: 100%;
+    height:100% ;
+
     }
 
 
@@ -110,7 +112,7 @@ h1{
     background-repeat: no-repeat;
     background-size:cover;
     padding: 100px;
-    color: rgb(236, 200, 111);
+    color: rgb(236, 130, 111);
     transition:  0.8s ease-in-out, alternate;
     border-bottom: 8px double;
    
@@ -152,6 +154,7 @@ nav {
     top:0px;
     position: fixed;
     width: 100%;
+    z-index: 20;
     
     
 }
@@ -165,11 +168,13 @@ nav {
 
 .nav-links a{
     text-decoration: none;
-    color:wheat;
+    color:rgb(60, 39, 198);
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 16px;
     opacity: 0.8;
+    position: absolute;
+    z-index:15;
 
 }
 
@@ -204,7 +209,13 @@ ul{
 
 @media screen and (max-width:768px) {
     body{
+        width: 768px;
+        
         overflow-x: hidden;
+        
+    }
+    .SlideShow {
+        display: none;
     }
     .nav-links{
         /* background-color: crimson; */
@@ -218,6 +229,7 @@ ul{
         width:50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in ;
+        
     }
     ul{
         list-style: none;
@@ -232,14 +244,18 @@ ul{
     }
     .burger{
         display: block;
-       position: absolute;
+       position:absolute;
+       
+       
     }
     
     .Hero:hover{
         padding: 100px;
     }
     .Hero{
-        height: 400px;
+        height: 700px;
+        width:50%;
+        border: 15px solid black;
     }
    nav {
     height:50px;
@@ -269,9 +285,24 @@ ul{
     
  }
  .Colors-Conteinetr{
-    width: 400px;
+    background-color: #f17d1e;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    
+    
  }
- 
+ .Colors-Container-Box1{
+   width: 100px;
+ }
+ .Four-Color-Box div { 
+    width:20px ;
+    height:20px;
+    
+  
+ }
+
 }
  /* ------and of responsivee ------ */
 
@@ -461,5 +492,187 @@ main {
      }
     
    
+  /* ------- article  ----- */
+
+  /* article{
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/abstract.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 50px solid rgb(73, 12, 47);
+   
+    
+  } */
+
+
+  /* -------------- meore gverdi ------ */
+
+  .Mtavari {
+    
+    width: 100%;
+    height:500px;
+    background-color: darkcyan;
+    background-image: url(/img/abstract.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      display: flex;
+    align-items: center;
+    position: absolute;
   
+   } 
+   .Mtavari p {
+      margin:0 auto
+   }
+  
+   .Sektsia {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* height: 100%; */
+      /* background-color: crimson; */
+      border: 4px solid blue;
+      position: relative;
+      margin-top: 300px;
+      width: 100%
+      
+    
+      
+   }
+  
+  
+       
+   .zeda-box{
+      display: flex;
+      justify-content: space-between;
+      /* background-color: rgb(247, 247, 247);   */
+      padding: 20px; 
+      height: 490px; 
+      width: 1060px;
+      border: 15px solid rgb(210, 26, 84);
+      margin-bottom: 20px;
+      box-shadow: inset -10em -15em  gold;
+     
+   }
+  
+   .kveda-box-mtliani  {
+      width: 1060px;
+      height: 538.40;
+      display: flex;
+      justify-content: space-between;
+   }
+   .marjvena-mxare {
+     
+    background-color: rgba(227, 213, 63, 0.804);
+      width: 460px;
+      height: 478.4px;
+      display:flex;
+      flex-direction: column;
+      /* align-items: center; */
+      padding:5px;
+      margin: 15px;
+      border: 15px solid rgb(211, 179, 217);
+      animation: Box;
+      animation-duration: 8s;
+      animation-delay: -2s;
+      animation-timing-function: ease-in-out  alternate;
+     animation-iteration-count:3;
+     
+        
+   }
+
+   @keyframes Box {
+    from {
+        transform: rotateY(0);}
+    10% {background-color: #af8b8b;}
+        
+    to {
+        transform: rotateY(360deg);
+        background-color: rgb(230, 197, 206)
+       
+    }
+    50% {
+        border: 15px solid rgba(227, 213, 63, 0.804);
+        box-shadow: inset 0 -3em 3em rgba(179, 108, 161, 0.721),
+      0 0 0 2px #af8b8b,
+      0.7em 0.7em 2em rgba(238, 34, 207, 0.671);
+    }
+   }
+   .marjvena-mxare-text{
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(241, 237, 182, 0.804);
+    text-align: center;
+
+   }
+   
+
+   .marjvena-mxare div {
+    padding: 10px;
+   }
+   .marjvena-mxare div p{
+    font-family: Mali;
+    text-align: justify;
+   }
+   .marjvena-mxare div h3 {
+    font-family: Capri;
+    text-transform: capitalize;
+    
+   }
+   .marckhena-mxare {
+      background-color: rgba(227, 213, 63, 0.804);
+      width: 475px;
+      height: 460px;
+      border: 15px solid rgb(211, 179, 217);
+      box-shadow: inset 0 -3em 3em rgba(179, 108, 161, 0.721),
+      0 0 0 2px #af8b8b,
+      0.7em 0.7em 2em rgba(238, 34, 207, 0.671);
+      display: flex;
+      align-items: center;
+      padding: 20px;
+     
+   }
+   .marckhena-mxare h5 {
+    font-family: Capri;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #f17d1e;
+    padding: 10px;
+  }
+  .marckhena-mxare  p { 
+    font-family: Mali;
+   
+
+  } 
+  .marckhena-mxare-text {
+    width: 300px;
+    padding: 20px;
+    background: rgba(241, 237, 182, 0.804);
+
+
+  }
+  .marckhena-mxare li {
+      list-style-type: none;
+  }
+   .cake{
+      width: 100px;
+      height: 110px;
+     
+      margin: 4px;
+      border: 5px solid wheat;
+      box-shadow: 10px 5px 5px rgb(140, 36, 36);
+      
+   }
+        
+  
+
+
   
